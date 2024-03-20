@@ -1,0 +1,74 @@
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    width: 260px;
+    height: 42px;
+    top: 10px;
+  }
+  
+  .select2-container--default .select2-results__option {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 1s ease;
+
+  }
+
+  .select2-container {
+    box-sizing: border-box; 
+    display: inline-block;
+   margin: 0;
+    position: relative;
+    vertical-align: middle;
+    width: auto !important;
+}
+  
+  .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #FFD6D6;
+  }
+  
+
+  .select2-container--default .select2-results__option--highlighted[aria-selected]:hover {
+    background-color: #FE5858;
+    transition-duration: 1s;
+  }
+  
+  .select2-container--default .select2-results__option--highlighted[aria-selected]:active {
+    background-color: #E00000;
+    transition-duration: 1s;
+  }
+  
+  .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #ffffff!important;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    right: 5px;
+    width: 20px;
+}
+
+.option-filter option {
+    background-color: #FFFFFF;
+    transition: background-color 1s;
+  }
+  
+  .option-filter option.hover-step-1 {
+    background-color: #FFD6D6;
+  }
+  
+  .option-filter option.hover-step-2 {
+    background-color: #FE5858;
+  }
+  
+  .option-filter option.hover-final {
+    background-color: red;
+  }
+
+  

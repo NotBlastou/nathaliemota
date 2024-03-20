@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.filter-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-area form {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterleft {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+.filterright {
+  display: flex;
+  flex: 1;
+}
+
+.select-filter {
+  position: relative;
+  margin: 0 10px;
+}
+
+.select-filter:last-child {
+  margin-right: 0;
+}
+
+.select-filter select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  appearance: none;
+}
+
+.select-close {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+@media (max-width: 800px) { /* Ajustez la valeur si nécessaire */
+  .filter-area form {
+    flex-direction: column; /* Empile les éléments verticalement */
+    flex: 0;
+  }
+  .filterleft,
+  .filterright {
+    width: 100%; /* Permet aux enfants de prendre toute la largeur */
+    justify-content: center; /* Centrer le contenu sur la largeur */
+    margin: 0; /* Réinitialiser les marges */
+  }
+  .select-filter {
+    width: 100%; /* Permet à chaque sélecteur de prendre toute la largeur */
+    margin-bottom: 10px; /* Ajouter de l'espace entre les sélecteurs empilés */
+  }
+  .select-filter:last-child {
+    margin-bottom: 0; /* Pas de marge en bas du dernier sélecteur */
+  }
+  .filterleft,
+  .filterright,
+  .select-filter {
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
+  .select-filter select {
+    width: calc(100% - 30px);
+  }
+  .hero-area .title-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 45px !important;
+    line-height: 142px;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+  }
+  .hero-area .hero-thumbnail {
+    max-height: 500px !important;
+  }
+  .hero-area img {
+    max-height: 500px !important;
+  }
+}
+@media (min-width: 400px) {
+  .hero-area .title-hero {
+    font-size: 48px !important; /* Taille de police plus petite pour les petits écrans */
+    line-height: 72px !important;
+  }
+}
+
+/*# sourceMappingURL=filtres.css.map */
